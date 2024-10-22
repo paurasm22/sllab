@@ -1,0 +1,58 @@
+Step 1: Open Wireshark
+Launch Wireshark:
+Open Wireshark from your desktop or applications menu.
+Step 2: Start Capture in Non-Promiscuous Mode
+Select Your Network Interface:
+In the Wireshark main window, you'll see a list of available network interfaces. Choose the one you're currently using (e.g., wlan0 for Wi-Fi or eth0 for Ethernet).
+Disable Promiscuous Mode:
+By default, Wireshark captures in promiscuous mode. To ensure it's disabled, go to:
+Capture > Options.
+In the options window, uncheck Capture packets in promiscuous mode.
+Start the Capture:
+Click the Start button (or double-click the selected interface) to begin capturing packets.
+Step 3: Generate Network Traffic
+While Wireshark is capturing, perform some activities that generate network traffic, such as:
+Browsing websites.
+Streaming videos.
+Downloading files.
+Step 4: Stop Capture
+Stop the Capture:
+Click the red square (stop button) in the toolbar to stop capturing packets.
+Step 5: Analyze Captured Packets
+Review the Packets:
+
+Look through the captured packets in the main window. You will see a list of packets with various details, such as time, source, destination, protocol, and more.
+Apply Filters:
+
+To filter specific traffic, you can type filters in the filter bar at the top. For example:
+To filter for HTTP traffic:
+Copy code
+http
+For DNS traffic:
+Copy code
+dns
+For TCP traffic:
+Copy code
+tcp
+Step 6: Start Capture in Promiscuous Mode
+Reopen Capture Options:
+
+Go to Capture > Options again.
+Enable Promiscuous Mode:
+
+Check the Capture packets in promiscuous mode option.
+Start the Capture:
+
+Click the Start button again to capture packets in promiscuous mode.
+Step 7: Generate Traffic Again
+Repeat the same activities you did earlier to generate network traffic.
+Step 8: Stop Capture Again
+Stop the Capture:
+Click the red square to stop the capture.
+Step 9: Analyze the Packets Again
+Review and Compare:
+Compare the packets captured in non-promiscuous mode and those captured in promiscuous mode. Look for differences in the number and types of packets captured.
+Step 10: Document Your Findings
+Take notes on your observations, including:
+The types and amounts of packets captured.
+Any differences between the non-promiscuous and promiscuous modes.
