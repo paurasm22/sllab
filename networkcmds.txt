@@ -1,0 +1,12 @@
+in linux to run network commands do this 
+# Update package lists
+sudo apt update
+
+# Install the required tools
+sudo apt install dnsutils whois traceroute
+
+# Use the tools
+nslookup youtube.com
+dig youtube.com
+whois youtube.com
+traceroute youtube.com
