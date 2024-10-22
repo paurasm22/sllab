@@ -1,0 +1,41 @@
+Here's a brief overview of the various scans you can perform with *Nmap*:
+
+### 1. *Open Port Scan*
+   - *Command*: nmap <target>
+   eg namp youtube.com
+   - *Description*: Scans a target to identify which ports are open. It helps to find services running on those ports.
+
+### 2. *OS Fingerprinting*
+   - *Command*: nmap -O <target>
+   - *Description*: Attempts to determine the operating system of the target device by analyzing the TCP/IP stack and other characteristics.
+
+### 3. *Ping Scan*
+   - *Command*: nmap -sn <target>
+   - *Description*: Performs a simple ping to check if the target is online without scanning ports. It identifies live hosts on a network.
+
+### 4. *TCP Port Scan*
+   - *Command*: nmap -sT <target>
+   - *Description*: Conducts a TCP connect scan, which attempts to establish a connection to each port to determine if it is open. This is the default scan type if no other options are specified.
+
+### 5. *UDP Port Scan*
+   - *Command*: nmap -sU <target>
+   - *Description*: Scans for open UDP ports. Unlike TCP, UDP is connectionless, so this scan takes longer and may require additional privileges.
+
+### 6. *Aggressive Scan*
+   - *Command*: nmap -A <target>
+   - *Description*: Combines multiple scan types (port scanning, OS detection, service version detection, and more) into one. It's very comprehensive and useful for a thorough assessment.
+
+### 7. *Service Version Detection*
+   - *Command*: nmap -sV <target>
+   - *Description*: Identifies versions of services running on open ports. This helps in assessing vulnerabilities related to specific service versions.
+
+### 8. *Stealth Scan (SYN Scan)*
+   - *Command*: nmap -sS <target>
+   - *Description*: Sends SYN packets to initiate a TCP handshake. If a port is open, it responds with a SYN-ACK, but the connection is never completed, making it less detectable.
+
+### 9. *Full Scan*
+   - *Command*: nmap -p- <target>
+   - *Description*: Scans all 65535 ports (both TCP and UDP) on the target. This is useful for a comprehensive analysis.
+
+### Summary
+Each scan type serves a different purpose and provides various levels of detail about the target network. Nmap is versatile, allowing you to tailor your scans based on your specific needs for network discovery and security assessment.
