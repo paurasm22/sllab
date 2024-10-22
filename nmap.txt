@@ -2,7 +2,7 @@ Here's a brief overview of the various scans you can perform with *Nmap*:
 
 ### 1. *Open Port Scan*
    - *Command*: nmap <target>
-   eg namp youtube.com
+   eg nmap youtube.com
    - *Description*: Scans a target to identify which ports are open. It helps to find services running on those ports.
 
 ### 2. *OS Fingerprinting*
